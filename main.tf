@@ -6,3 +6,6 @@ resource "aws_ebs_volume" "ebsvolume" {
   final_snapshot    = true
   #  doubt snapshot_id =
 }
+resource "aws_ebs_encryption_by_default" "ebssnap" {
+  enabled = true
+}
